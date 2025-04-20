@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign Up - INTERNET PROGRAMMING</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+        <link rel="stylesheet" href="../LAB2/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__label">INTERNET PROGRAMMING</h1>
+            <ul class="header__links">
+                <li><a class="header__link" href="index.html">Home</a></li>
+                <li><a class="header__link" href="login.html">Login</a></li>
+                <li>Sign Up</li>
+            </ul>
+        </header>
+        <main class="main">
+            <h2 class="main__heading">Create Your Account</h2>
+            <form class="form" action="#" method="GET">
+                <label for="name">
+                    Full Name
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        autofocus
+                        placeholder="ex) Alice Kim"
+                    />
+                </label>
+                <label for="email">
+                    Email
+                    <input
+                        class="form__input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        placeholder="ex) alice@example.com"
+                    />
+                </label>
+                <label for="password">
+                    Password
+                    <input
+                        class="form__input"
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+                </label>
+                <label for="age">
+                    Age
+                    <input
+                        class="form__input"
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="1"
+                        max="120"
+                        step="1"
+                        placeholder="ex) 25"
+                    />
+                </label>
+                <label for="birthdate">
+                    Birthdate
+                    <input class="form__input" type="date" id="birthdate" name="birthdate" />
+                </label>
+                <fieldset class="form__radio-group">
+                    <legend>Gender</legend>
+                    <label>
+                        he/him
+                        <input class="form__input" type="radio" name="gender" value="male" />
+                    </label>
+                    <label>
+                        she/her
+                        <input class="form__input" type="radio" name="gender" value="female" />
+                    </label>
+                    <label>
+                        they/them
+                        <input class="form__input" type="radio" name="gender" value="other" />
+                    </label>
+                </fieldset>
+                <label for="genre">
+                    Favorite Movie Genre
+                    <select class="form__input" id="genre" name="genre" required>
+                        <option value="">-- Choose one --</option>
+                        <option value="action">Action</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="romance">Romance</option>
+                    </select>
+                </label>
+                <button type="submit">Sign Up</button>
+            </form>
+        </main>
+    </body>
+</html>

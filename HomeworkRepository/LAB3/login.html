@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Login - INTERNET PROGRAMMING</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+        <link rel="stylesheet" href="../LAB2/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__label">INTERNET PROGRAMMING</h1>
+            <ul class="header__links">
+                <li><a class="header__link" href="index.html">Home</a></li>
+                <li>Login</li>
+                <li><a class="header__link" href="signup.html">Sign Up</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h2 class="main__heading">Login</h2>
+            <form action="#" method="POST" class="form">
+                <label for="email">
+                    Email
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form__input"
+                        required
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                    />
+                </label>
+                <label for="password">
+                    Password
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form__input"
+                        required
+                        placeholder="Enter your password"
+                    />
+                </label>
+                <button type="submit">Login</button>
+            </form>
+        </main>
+    </body>
+</html>
